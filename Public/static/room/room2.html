@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>聊天室</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body id="content">
+    测试聊天室
+</body>
+<script type="text/javascript">
+    const socket = new WebSocket('ws://192.168.64.2:9507?name=13023050506');
+
+    // Connection opened
+    socket.addEventListener('open', function (event) {
+        socket.send('Hello Server!');
+    });
+
+    // Listen for messages
+    socket.addEventListener('message', function (event) {
+        debugger
+        $("#content").html(event.data);
+        console.log('Message from server ', event.data);
+    });
+</script>
+</html>
