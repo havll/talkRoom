@@ -143,7 +143,6 @@ debugger;
 		if(str!='') {
 			sends_message($.cookie('userName'), $.cookie('avatar'), str); // sends_message(昵称,头像id,聊天内容);
 
-debugger;
 			// 滚动条滚到最下面
 			$('.scrollbar-macosx.scroll-content.scroll-scrolly_visible').animate({
 				scrollTop: $('.scrollbar-macosx.scroll-content.scroll-scrolly_visible').prop('scrollHeight')
@@ -234,8 +233,14 @@ debugger;
 		$('.imgFileBtn').click();
 	});
 	function sends_message (userName, userPortrait, message) {
+        var myDate = new Date();
+        var h=myDate.getHours();       //获取当前小时数(0-23)
+        var m=myDate.getMinutes();     //获取当前分钟数(0-59)
+        var s=myDate.getSeconds();
+        var now = h+':'+m+':'+s;
+
 		if(message!='') {
-			$('.main .chat_info').html($('.main .chat_info').html() + '<li class="right"><img src="images/user/' + userPortrait + '.png" alt=""><b>' + userName + '</b><i>09:15</i><div class="aaa">' + message  +'</div></li>');
+			$('.main .chat_info').html($('.main .chat_info').html() + '<li class="right"><img src="images/user/' + userPortrait + '.png" alt=""><b>' + userName + '</b><i>'+now+'</i><div class="aaa">' + message  +'</div></li>');
 		}
 		var messageData = {
 			'message' : message,

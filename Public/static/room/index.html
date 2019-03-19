@@ -119,21 +119,4 @@
 		</div>
 	</div>
 </body>
-<script type="text/javascript">
-	var userName = $.cookie('userName');
-	var avatar = $.cookie('avatar');
-	$("#userName").html(userName);
-    const socket = new WebSocket('ws://192.168.64.2:9507?name='+userName+'&avatar='+avatar);
-
-    // Connection opened
-    socket.addEventListener('open', function (event) {
-        socket.send('Hello Server!');
-    });
-
-    // Listen for messages
-    socket.addEventListener('message', function (event) {
-        $("#userName").html(event.data);
-        console.log('Message from server ', event.data);
-    });
-</script>
 </html>

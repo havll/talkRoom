@@ -7,8 +7,6 @@
  */
 namespace App\Server\WebSocket;
 
-use App\Utility\Redis;
-
 class WebSocketServer
 {
     protected $server;
@@ -18,6 +16,9 @@ class WebSocketServer
     private $userKey = "user_key:";
 
     private $roomKey = "room";
+
+    //房间用户信息
+    private $roomUser = 'room_user_';
 
     //把fd name 关联到roomID ,链接close时把用户从房间剔除
     private $roomUserKey = "room_user:";
@@ -37,27 +38,25 @@ class WebSocketServer
     }
 
     public function open(\Swoole\WebSocket\Server $server,$request){
-        echo 'connect:'.$request->fd."\n";
-        echo $request->get['name']."\n";
-        echo $request->get['avatar']."\n";
         $data['fd'] = $request->fd;
         $data['name'] = $request->get['name'];
         $data['avatar'] = $request->get['avatar'];
         $data['roomId'] = isset($request->get['room']) ? $request->get['room'] : 0;
-        //关联fd和用户name，close时从在线用户组中剔除
+        //关联fd和用户name，close时从在线用户组中踢出
         $this->redis->set($request->fd,$data['name']);
-        //关联fd和用户name 房间id，close时从房间中剔除
-        $this->redis->set($this->roomUserKey.$request->fd,$data['roomId'].'-'.$data['name']);
-        //在线用户
-        $this->onlineUsers($data);
         //聊天室用户
         if (!empty($data['roomId'])){
-            //用户关联到指定房间
+            //关联fd和用户name 房间id，close时从房间中踢出
+            $this->redis->set($this->roomUserKey.$request->fd,$data['roomId'].'-'.$data['name']);
+            //用户fd关联到指定房间，close时踢出
             $this->bindRoomUsers($this->roomKey.$data['roomId'],$request->fd);
+            //用户身份信息关联到指定房间,close时踢出
+            $this->bindUsers($data,$this->roomUser.$data['name']);
+            //房间在线用户
             $roomUsers = $this->roomUsers($this->roomKey.$data['roomId']);
             $data['count'] = count($roomUsers);
             $data['type'] = 'onlineList';
-            $data['message'] = $roomUsers;
+            $data['message'] = $this->getKeyBindUsers($this->roomUser.'*');
             $this->pushMessageToRoom($roomUsers,$data,$server,$request->fd,true);
         }
 
@@ -65,10 +64,9 @@ class WebSocketServer
 
     public function message(\Swoole\WebSocket\Server $server,$frame){
         $data = json_decode($frame->data,true);
-        var_dump($data);
         $data['time'] = date('h:i:s');
         //聊天室
-        if ($data['type'] == 'talkToRoom'){
+        if (isset($data['type']) && $data['type'] == 'talkToRoom'){
             $roomUsers = $this->roomUsers($this->roomKey.$data['roomId']);
             $this->pushMessageToRoom($roomUsers,$data,$server,$frame->fd,false);
         }
@@ -77,9 +75,21 @@ class WebSocketServer
     public function close($ser, $fd){
         echo 'close'.$fd."\n";
         $name = $this->redis->get($fd);
-        $nameAndRoomId = explode('-',$this->redis->get($this->roomUserKey.$fd));
-        $this->redis->del($this->userKey.$name);
-        $this->redis->sRem($this->roomKey.$nameAndRoomId[0],$fd);
+        //从在线列表中踢出
+        $this->redis->del($this->roomUser.$name);
+        $roomUserKey = $this->redis->get($this->roomUserKey.$fd);
+        if (!empty($roomUserKey)){
+            $nameAndRoomId = explode('-',$roomUserKey);
+            $roomId = $nameAndRoomId[0];
+            $this->redis->sRem($this->roomKey.$roomId,$fd);
+            $roomUsers = $this->roomUsers($this->roomKey.$roomId);
+            $data['count'] = count($roomUsers);
+            $data['type'] = 'offLine';
+            $data['name'] = $name;
+            $data['message'] = $this->getKeyBindUsers($this->roomUser.'*');
+            $this->pushMessageToRoom($roomUsers,$data,$ser,$fd,false);
+        }
+
     }
 
 
@@ -88,7 +98,7 @@ class WebSocketServer
      * @param $key
      * @return array
      */
-    private function keyBindUsers($key){
+    private function getKeyBindUsers($key){
       $keys =  $this->redis->keys($key);
       $users = [];
       foreach ($keys as $key =>$val){
@@ -110,13 +120,14 @@ class WebSocketServer
     }
 
     /**
-     * 在线用户
+     * 绑定key对应的用户
      * @param $data
+     * @param $key
      * @return bool
      */
-    private function onlineUsers($data){
+    private function bindUsers($data,$key){
         foreach ($data as $field => $val){
-            $this->redis->hSet($this->userKey.$data['name'],$field,$val);
+            $this->redis->hSet($key,$field,$val);
         }
         return true;
     }

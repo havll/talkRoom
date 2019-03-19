@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45a558ff-2799-400a-804e-08c61c27da6b" name="Default Changelist" comment="" />
+    <list default="true" id="45a558ff-2799-400a-804e-08c61c27da6b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Server/WebSocket/WebSocketServer.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Server/WebSocket/WebSocketServer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Public/static/room/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Public/static/room/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Public/static/room/room.html" beforeDir="false" afterPath="$PROJECT_DIR$/Public/static/room/room.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +33,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="10" />
+          <entry key="html" value="12" />
           <entry key="js" value="3" />
           <entry key="json" value="1" />
           <entry key="php" value="12" />
@@ -36,7 +41,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="10" />
+          <entry key="HTML" value="12" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="3" />
           <entry key="PHP" value="12" />
@@ -44,18 +49,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="1461" />
+          <entry key="html" value="1654" />
           <entry key="js" value="359" />
           <entry key="json" value="29" />
-          <entry key="php" value="5096" />
+          <entry key="php" value="5789" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1461" />
+          <entry key="HTML" value="1654" />
           <entry key="JSON" value="29" />
           <entry key="JavaScript" value="359" />
-          <entry key="PHP" value="5096" />
+          <entry key="PHP" value="5789" />
         </counts>
       </usages-collector>
     </session>
@@ -65,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App/Server/WebSocket/WebSocketServer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="-370">
+              <caret line="41" column="68" selection-start-line="41" selection-start-column="68" selection-end-line="41" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -74,7 +79,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Public/static/room/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
+            <state relative-caret-position="-349">
               <caret line="11" column="88" selection-start-line="11" selection-start-column="88" selection-end-line="11" selection-end-column="88" />
             </state>
           </provider>
@@ -83,20 +88,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Public/static/room/room.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="361">
+              <caret line="174" column="9" lean-forward="true" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Public/static/room/javascripts/Public.js">
+        <entry file="file://$PROJECT_DIR$/Public/static/room/room2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="242" column="25" lean-forward="true" selection-start-line="242" selection-start-column="25" selection-end-line="242" selection-end-column="25" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="546">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -104,8 +106,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Public/static/room/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="136" column="7" lean-forward="true" selection-start-line="122" selection-start-column="4" selection-end-line="136" selection-end-column="7" />
+            <state relative-caret-position="491">
+              <caret line="120" column="7" selection-start-line="120" selection-start-column="7" selection-end-line="120" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/static/room/javascripts/Public.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,8 +140,10 @@
       <find>popover-title</find>
       <find>subxx</find>
       <find>userName</find>
-      <find>chat_info</find>
       <find>$roomKey</find>
+      <find>roomKey</find>
+      <find>chat_info</find>
+      <find>false</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,10 +165,10 @@
         <option value="$PROJECT_DIR$/Public/static/talkroom/index.html" />
         <option value="$PROJECT_DIR$/App/Controller/Home/Index.php" />
         <option value="$PROJECT_DIR$/Public/static/room/login.html" />
-        <option value="$PROJECT_DIR$/Public/static/room/index.html" />
         <option value="$PROJECT_DIR$/Public/static/room/javascripts/Public.js" />
-        <option value="$PROJECT_DIR$/Public/static/room/room.html" />
         <option value="$PROJECT_DIR$/Test.php" />
+        <option value="$PROJECT_DIR$/Public/static/room/index.html" />
+        <option value="$PROJECT_DIR$/Public/static/room/room.html" />
         <option value="$PROJECT_DIR$/App/Server/WebSocket/WebSocketServer.php" />
       </list>
     </option>
@@ -190,6 +206,24 @@
             <path>
               <item name="talkRoom" type="b2602c69:ProjectViewProjectNode" />
               <item name="talkRoom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="talkRoom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="talkRoom" type="462c0819:PsiDirectoryNode" />
+              <item name="Public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="talkRoom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="talkRoom" type="462c0819:PsiDirectoryNode" />
+              <item name="Public" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="talkRoom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="talkRoom" type="462c0819:PsiDirectoryNode" />
+              <item name="Public" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="room" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -238,17 +272,18 @@
       <workItem from="1552466083485" duration="456000" />
       <workItem from="1552466655555" duration="8177000" />
       <workItem from="1552547418882" duration="6415000" />
-      <workItem from="1552617566345" duration="15481000" />
+      <workItem from="1552617566345" duration="23650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40666000" />
+    <option name="totallyTimeSpent" value="48835000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1400" height="777" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27540502" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27540502" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -261,7 +296,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.329927" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.329927" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -329,10 +364,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/static/room/javascripts/Public.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Public/static/room/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
+        <state relative-caret-position="-349">
           <caret line="11" column="88" selection-start-line="11" selection-start-column="88" selection-end-line="11" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/static/room/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="120" column="7" selection-start-line="120" selection-start-column="7" selection-end-line="120" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -343,41 +402,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Public/static/room/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="136" column="7" lean-forward="true" selection-start-line="122" selection-start-column="4" selection-end-line="136" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/static/room/javascripts/Public.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="242" column="25" lean-forward="true" selection-start-line="242" selection-start-column="25" selection-end-line="242" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Public/static/room/room.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        <state relative-caret-position="361">
+          <caret line="174" column="9" lean-forward="true" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Server/WebSocket/WebSocketServer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        <state relative-caret-position="-370">
+          <caret line="41" column="68" selection-start-line="41" selection-start-column="68" selection-end-line="41" selection-end-column="68" />
         </state>
       </provider>
     </entry>

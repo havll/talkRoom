@@ -159,8 +159,14 @@
 
     // Listen for messages
     socket.addEventListener('message', function (event) {
-        $("#text").html(event.data);
+        var myDate = new Date();
+        var h=myDate.getHours();       //获取当前小时数(0-23)
+        var m=myDate.getMinutes();     //获取当前分钟数(0-59)
+        var s=myDate.getSeconds();
+        var now = h+':'+m+':'+s;
+
         var messageData = JSON.parse(event.data);
+        console.log(messageData);
         if (messageData.type == 'onlineList'){
             //上线通知
             online(messageData);
@@ -168,11 +174,16 @@
             onlineList(messageData);
 		}
 
+		if (messageData.type == 'offLine'){
+		    //更新用户列表
+			onlineList(messageData);
+		}
+
 		if (messageData.type == 'talkToRoom'){
 		    $(".chat_info").append("<li class=\"left\">\n" +
                 "\t\t\t\t\t\t<img src=\"images/user/"+messageData.avatar+".png\" alt=\"\">\n" +
                 "\t\t\t\t\t\t<b>"+messageData.userName+"</b>\n" +
-                "\t\t\t\t\t\t<i>"+messageData.time+"</i>\n" +
+                "\t\t\t\t\t\t<i>"+now+"</i>\n" +
                 "\t\t\t\t\t\t<div>"+messageData.message+"</div>\n" +
                 "\t\t\t\t\t</li>");
 		}
@@ -182,6 +193,13 @@
     function online(messageData) {
         $(".chat_info").append("<li class=\"systeminfo\">\n" +
             "\t\t\t\t\t\t<span>【"+messageData.name+"】加入了房间</span>\n" +
+            "\t\t\t\t\t</li>");
+    }
+
+    //用户下线通知
+    function offLine(messageData) {
+        $(".chat_info").append("<li class=\"systeminfo\">\n" +
+            "\t\t\t\t\t\t<span>【"+messageData.name+"】离开了房间</span>\n" +
             "\t\t\t\t\t</li>");
     }
 
