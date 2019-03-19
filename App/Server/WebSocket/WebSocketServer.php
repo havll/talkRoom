@@ -73,7 +73,6 @@ class WebSocketServer
     }
 
     public function close($ser, $fd){
-        echo 'close'.$fd."\n";
         $name = $this->redis->get($fd);
         //从在线列表中踢出
         $this->redis->del($this->roomUser.$name);

@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="45a558ff-2799-400a-804e-08c61c27da6b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Server/WebSocket/WebSocketServer.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Server/WebSocket/WebSocketServer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/static/room/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Public/static/room/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/static/room/room.html" beforeDir="false" afterPath="$PROJECT_DIR$/Public/static/room/room.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +17,7 @@
     <session id="2051838972">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.opened" value="8" />
@@ -50,7 +47,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="1654" />
-          <entry key="js" value="359" />
+          <entry key="js" value="370" />
           <entry key="json" value="29" />
           <entry key="php" value="5789" />
         </counts>
@@ -59,7 +56,7 @@
         <counts>
           <entry key="HTML" value="1654" />
           <entry key="JSON" value="29" />
-          <entry key="JavaScript" value="359" />
+          <entry key="JavaScript" value="370" />
           <entry key="PHP" value="5789" />
         </counts>
       </usages-collector>
@@ -70,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App/Server/WebSocket/WebSocketServer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-370">
-              <caret line="41" column="68" selection-start-line="41" selection-start-column="68" selection-end-line="41" selection-end-column="68" />
+            <state relative-caret-position="253">
+              <caret line="158" column="64" lean-forward="true" selection-start-line="158" selection-start-column="64" selection-end-line="158" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -88,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Public/static/room/room.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="174" column="9" lean-forward="true" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
+            <state relative-caret-position="172">
+              <caret line="165" column="32" lean-forward="true" selection-start-line="161" selection-start-column="7" selection-end-line="165" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -115,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Public/static/room/javascripts/Public.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="533">
+              <caret line="246" column="34" lean-forward="true" selection-start-line="246" selection-start-column="34" selection-end-line="246" selection-end-column="34" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -165,10 +162,10 @@
         <option value="$PROJECT_DIR$/Public/static/talkroom/index.html" />
         <option value="$PROJECT_DIR$/App/Controller/Home/Index.php" />
         <option value="$PROJECT_DIR$/Public/static/room/login.html" />
-        <option value="$PROJECT_DIR$/Public/static/room/javascripts/Public.js" />
         <option value="$PROJECT_DIR$/Test.php" />
         <option value="$PROJECT_DIR$/Public/static/room/index.html" />
         <option value="$PROJECT_DIR$/Public/static/room/room.html" />
+        <option value="$PROJECT_DIR$/Public/static/room/javascripts/Public.js" />
         <option value="$PROJECT_DIR$/App/Server/WebSocket/WebSocketServer.php" />
       </list>
     </option>
@@ -272,18 +269,18 @@
       <workItem from="1552466083485" duration="456000" />
       <workItem from="1552466655555" duration="8177000" />
       <workItem from="1552547418882" duration="6415000" />
-      <workItem from="1552617566345" duration="23650000" />
+      <workItem from="1552617566345" duration="24597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48835000" />
+    <option name="totallyTimeSpent" value="49782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1400" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27540502" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27540502" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -296,8 +293,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.329927" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4992636" visible="true" weight="0.329927" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50073636" side_tool="true" weight="0.329927" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -371,16 +368,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Public/static/room/javascripts/Public.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Public/static/room/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-349">
@@ -404,15 +391,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Public/static/room/room.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="174" column="9" lean-forward="true" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
+        <state relative-caret-position="172">
+          <caret line="165" column="32" lean-forward="true" selection-start-line="161" selection-start-column="7" selection-end-line="165" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/static/room/javascripts/Public.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="246" column="34" lean-forward="true" selection-start-line="246" selection-start-column="34" selection-end-line="246" selection-end-column="34" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Server/WebSocket/WebSocketServer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-370">
-          <caret line="41" column="68" selection-start-line="41" selection-start-column="68" selection-end-line="41" selection-end-column="68" />
+        <state relative-caret-position="253">
+          <caret line="158" column="64" lean-forward="true" selection-start-line="158" selection-start-column="64" selection-end-line="158" selection-end-column="64" />
         </state>
       </provider>
     </entry>
