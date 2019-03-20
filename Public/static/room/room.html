@@ -149,7 +149,7 @@
 <script type="text/javascript">
     var userName = $.cookie('userName');
     var avatar = $.cookie('avatar');
-    const socket = new WebSocket('ws://127.0.0.1:9507?name='+userName+'&avatar='+avatar+'&room=1');
+    const socket = new WebSocket('ws://106.12.19.37:9507?name='+userName+'&avatar='+avatar+'&room=1');
 
     // Connection opened
     socket.addEventListener('open', function (event) {
