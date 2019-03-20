@@ -83,10 +83,11 @@ class WebSocketServer
             $roomId = $nameAndRoomId[0];
             $this->redis->sRem($this->roomKey.$roomId,$fd);
             $roomUsers = $this->roomUsers($this->roomKey.$roomId);
-            $data['count'] = count($roomUsers);
+            $roomUsersInfo = $this->getKeyBindUsers($this->roomUser.'*');
+            $data['count'] = count($roomUsersInfo);
             $data['type'] = 'offLine';
             $data['name'] = $name;
-            $data['message'] = $this->getKeyBindUsers($this->roomUser.'*');
+            $data['message'] = $roomUsersInfo;
             $this->pushMessageToRoom($roomUsers,$data,$ser,$fd,false);
         }
 
