@@ -49,7 +49,7 @@
           <entry key="html" value="1692" />
           <entry key="js" value="370" />
           <entry key="json" value="29" />
-          <entry key="php" value="5839" />
+          <entry key="php" value="5843" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -57,7 +57,7 @@
           <entry key="HTML" value="1692" />
           <entry key="JSON" value="29" />
           <entry key="JavaScript" value="370" />
-          <entry key="PHP" value="5839" />
+          <entry key="PHP" value="5843" />
         </counts>
       </usages-collector>
     </session>
@@ -67,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App/Server/WebSocket/WebSocketServer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="87" column="38" lean-forward="true" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
+            <state relative-caret-position="525">
+              <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
             </state>
           </provider>
         </entry>
@@ -254,12 +254,12 @@
       <workItem from="1552547418882" duration="6415000" />
       <workItem from="1552617566345" duration="24597000" />
       <workItem from="1552976121493" duration="82000" />
-      <workItem from="1553046770404" duration="2452000" />
+      <workItem from="1553046770404" duration="3035000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52316000" />
+    <option name="totallyTimeSpent" value="52899000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="68" width="1400" height="777" extended-state="0" />
@@ -387,8 +387,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Server/WebSocket/WebSocketServer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="87" column="38" lean-forward="true" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
+        <state relative-caret-position="525">
+          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
         </state>
       </provider>
     </entry>

@@ -88,7 +88,7 @@ class WebSocketServer
             $data['type'] = 'offLine';
             $data['name'] = $name;
             $data['message'] = $roomUsersInfo;
-            $this->pushMessageToRoom($roomUsers,$data,$ser,$fd,false);
+            $this->pushMessageToRoom($roomUsers,$data,$ser,$fd,true);
         }
 
     }
