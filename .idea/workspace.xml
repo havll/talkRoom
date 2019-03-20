@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45a558ff-2799-400a-804e-08c61c27da6b" name="Default Changelist" comment="" />
+    <list default="true" id="45a558ff-2799-400a-804e-08c61c27da6b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Public/static/room/room.html" beforeDir="false" afterPath="$PROJECT_DIR$/Public/static/room/room.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +46,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="1669" />
+          <entry key="html" value="1681" />
           <entry key="js" value="370" />
           <entry key="json" value="29" />
           <entry key="php" value="5789" />
@@ -52,7 +54,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1669" />
+          <entry key="HTML" value="1681" />
           <entry key="JSON" value="29" />
           <entry key="JavaScript" value="370" />
           <entry key="PHP" value="5789" />
@@ -83,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Public/static/room/room.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="138" column="16" selection-start-line="138" selection-start-column="16" selection-end-line="138" selection-end-column="16" />
+            <state relative-caret-position="3061">
+              <caret line="148" column="31" lean-forward="true" selection-start-line="148" selection-start-column="31" selection-end-line="148" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -251,15 +253,15 @@
       <workItem from="1552547418882" duration="6415000" />
       <workItem from="1552617566345" duration="24597000" />
       <workItem from="1552976121493" duration="82000" />
-      <workItem from="1553046770404" duration="673000" />
+      <workItem from="1553046770404" duration="1819000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50537000" />
+    <option name="totallyTimeSpent" value="51683000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="23" width="1400" height="777" extended-state="0" />
+    <frame x="40" y="68" width="1400" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2827688" />
@@ -384,8 +386,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Public/static/room/room.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="138" column="16" selection-start-line="138" selection-start-column="16" selection-end-line="138" selection-end-column="16" />
+        <state relative-caret-position="3061">
+          <caret line="148" column="31" lean-forward="true" selection-start-line="148" selection-start-column="31" selection-end-line="148" selection-end-column="31" />
         </state>
       </provider>
     </entry>

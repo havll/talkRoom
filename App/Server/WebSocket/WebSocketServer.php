@@ -30,7 +30,7 @@ class WebSocketServer
     }
 
     public function run(){
-        $this->server = new \Swoole\WebSocket\Server("0.0.0.0", 9507);
+        $this->server = new \Swoole\WebSocket\Server("0.0.0.0", 9501);
         $this->server->on('open',[$this,'open']);
         $this->server->on('message',[$this,'message']);
         $this->server->on('close',[$this,'close']);
