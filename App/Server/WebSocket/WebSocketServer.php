@@ -54,9 +54,10 @@ class WebSocketServer
             $this->bindUsers($data,$this->roomUser.$data['name']);
             //房间在线用户
             $roomUsers = $this->roomUsers($this->roomKey.$data['roomId']);
-            $data['count'] = count($roomUsers);
+            $roomUsersInfo = $this->getKeyBindUsers($this->roomUser.'*');
+            $data['count'] = count($roomUsersInfo);
             $data['type'] = 'onlineList';
-            $data['message'] = $this->getKeyBindUsers($this->roomUser.'*');
+            $data['message'] = $roomUsersInfo;
             $this->pushMessageToRoom($roomUsers,$data,$server,$request->fd,true);
         }
 
